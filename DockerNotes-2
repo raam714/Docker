@@ -1,0 +1,24 @@
+DockerFile
+
+Instruction Arguments
+
+FROM    ubuntu:16
+
+
+Instructions in dockerfile
+
+FROM                   Specify the vaild docker image name           FROM ubuntu:latest
+MAINTAINER             specify about the author                      MAINTAINER  Ram
+LABEL                  Specify the Metadata information              LABEL "Application_Support"="Ram"
+EXPOSE                 Specify the network port that containers listen on runtime     EXPOSE 80
+ADD                    Used to copy files directories remote url files to destinations  shell form: ADD src dest or Executable form:ADD ['Src','dest']
+                       compressed file(tar,gzip,bzip2,etc) then it extract
+COPY                   Used to copy files directories remote url files to destinations  shell form: COPY src dest or Executable form:COPY ['Src','dest']
+RUN                    Used to execute command on top of the current image       RUN yum update       or RUN['Yum','update']
+CMD                    used to execute command when running a container.Only one CMD in dockerfile if more used last one will be effective  CMD Ping google.com
+ENTRYPOINt             used to configure and run a container ENTRYPOINT Ping google.com
+VOLUME                 used to create or mount volume                VOLUME /data
+USER                   used to set username ,groupname,uid,gid for running commands or root user will be used  USER webadmin
+WORKDIR                used to set working directory          WORKDIR /app/
+ENV                    Used to set environment variables with key and values.This variable is set during image but also available after container launched ENV App_dIR/data
+ARG                    Used to set environment variables with key and values.This variable is set during image but not available after container launched ARG App_dIR/data
