@@ -4,11 +4,11 @@ What is a Docker?
 
 Lets assume you are a developer and try to gift Special Greeting application to your loved one on her birthday so you create your own special greeting application on your machine.You test the code many times & find all the functionalities are working fine without any problem.you just shared your application's binaries with your loved one.
 
-Your girlfriend also very excited to see your gift.She eagerly install it on her laptop. After installing, she tries to open it but it doesn't work.She is very disappointed just because of this.She calls you & explains what is happened. At the same time, you try to install same binaries on your machine and find which is working fine without making any error or issue.
+Your girlfriend also very excited to see your gift.She eagerly install it on her laptop. After installing, she tries to open it but it doesn't work.She is very disappointed.She calls you & explains what is happened. At the same time, you try to install same binaries on your machine and find which is working fine without making any error or issue.
 
 Do you know why?
 
-The Reason could be due to : Dependencies Libraries and Versions Framework OS Level Features Microservices**
+The Reason could be due to : Dependencies, Libraries & Versions, Framework, OS Level Features and Microservices**
 
 That your machine has but not there in your Girlfriend machine.
 
