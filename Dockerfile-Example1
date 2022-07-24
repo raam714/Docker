@@ -8,3 +8,4 @@ CMD apachectl -D FPREGROUND
 
 build docker image using dockerfile
 docker build -f /var/tmp/dockerfile -t myimage:1.0
+docker build  -t myimage:1.1 .   current directory
