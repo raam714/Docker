@@ -4,3 +4,7 @@ RUN yum install -y httpd
 COPY index.html /var/www/html/index.html
 EXPOSE 80
 CMD apachectl -D FPREGROUND
+
+
+build docker image using dockerfile
+docker build -f /var/tmp/dockerfile -t myimage:1.0
