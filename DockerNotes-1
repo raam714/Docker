@@ -1,0 +1,54 @@
+Basic commands
+
+1. docker -v                    Display the version
+2. docker version               Display full details
+3. docker space tab             list all commands
+4. docker system help           Explain & List commands
+5. docker search <imagename>  
+   e.g docker search httpd      List all the image from hub
+6. docker pull <imagename>
+   e.g docker pull httpd        Download latest image from docker hub
+7. docker images                List all the images
+8. docker create                Only create container
+9. docker run                   Create & Start container
+10. docker ps                   list all running containers
+11. docker run --name <ConatainerName> <ImageName>
+    e.g docker run --name ram httpd    Error happens due to Foreground
+12. Ctrl + C to come out erorr
+13. docker ps -a                  List all running & stopped conatainer
+14. docker run -d --name <ConatainerName> <ImageName>
+    e.g docker run -d --name ram httpd   Run conatainer background without error
+15. docker exec -it  <ConatainerName> /bin/sh    Login into container
+16  exit & Ctrl + d        coming out from logged conatiner
+17. docker exec <conatinerName> <commands>
+    e.g docker exec ram mkdir /tmp/riya         Execute some commands inside conatainer
+18. docker cp <filepath> <conatainername>:<path>
+    e.g docker riya.txt ram:/tmp/riya            Copy file from local to container viceversa aslo we can did
+19. docker stop <containerName> or <ConatainerID>   
+    e.g docker stop ram              Stop  the running container
+20. docker start <containerName> or <ConatainerID> 
+    e.g docker start ram              start  the stopped container
+21. docker system df                  Disk space
+22. docker rm <containerName>          Remove only stopped container
+23. docker rm -f <containerName>         Forced stopped container
+24. docker logs <containerName>          Logs of container
+25. docker stats <containerName>                         Container usage Performance
+26. docker top <conatinerName>          Process of container display
+27. docker system prune                 unused delete conatainers
+28. docker run -d --name ram -p 80:81 httpd   port
+29. docker inspect <imageID>       Find port in container
+30. docker save <imageName> > <name>.tar   Backup images
+31. scp /tmp/<name>.tar  uname@<ip>:/home/ram/   copy container from one instance to another
+32. docker load -i <tarfilepath>    Run image from tar file
+33. docker rmi <imageid>  to remove image needs to stop & remove container
+34. docker rmi $(docker images -a -q)     Parameter or variables
+35. docker commit <containerID> <Name>:<version>  Create image from docker container
+36. docker push <imageName>:version
+    e.g docker push ram:1.1           Send image to docker hub
+37. docker login                      Need authetication to send image to hub
+38. docker tag <imageName>:version <newname>:<version> 
+    e.g docker tag ram:1.1  raam714/ram:1.1  Rename existing image name
+
+    
+
+         
